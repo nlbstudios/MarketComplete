@@ -12,14 +12,19 @@ body {
     color: $gray-light;
 }
 
+.text-white{
+  color:white;
+}
+
 .text-primary {
     color: $theme-primary;
 }
 
 p {
     @include sans-serif-font;
-    font-size: 17px;
+    font-size: 15px;
     line-height: 1.75;
+    color: $gray-light;
 }
 
 
@@ -80,11 +85,19 @@ h1, h2, h3, h4, h5, h6 {
   margin:0px auto 40px auto;
 }
 
+
 .header-underline-white{
   height:3px;
   width: 190px;
   margin:0px auto 40px auto;
   background-color: white;
+}
+
+.header-underline-theme{
+  height:3px;
+  width: 190px;
+  margin:0px auto 40px auto;
+  background-color: $theme-primary;
 }
 
 // Restyled Primary Buttons
@@ -281,6 +294,9 @@ section {
     h2.section-heading.white{
       color:white;
     }
+    h2.section-heading.theme{
+      color:$theme-primary;
+    }
     h3.section-subheading {
         font-size: 16px;
         @include serif-font;
@@ -319,11 +335,39 @@ section {
 
 // Services Section
 
+#services{
+  background-image: url('../img/services/services_background.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 5% 0px 5% 0px;
+}
+
 .service-heading {
     margin: 15px 0;
     text-transform: none;
+    font-style: italic;
 }
 
+.services-icon{
+  margin: auto auto 30px auto;
+}
+
+.services-content{
+  margin-bottom: 30px;
+  background-color: $gray-darker;
+  border-radius:10px;
+  padding: 5px 10px 5px 10px;
+}
+
+@media (min-width:767px){
+  .services-heading{
+  margin:15px 0px 30px 0px;
+  }
+  .services-content{
+    padding: 5px 10px 0px 10px;
+  }
+}
 // Portfolio Section
 
 #portfolio {
@@ -334,7 +378,7 @@ section {
             display: block;
             position: relative;
             max-width: 400px;
-            margin: 0 auto;
+            margin: 0;
             .portfolio-hover {
                 background: fade-out($theme-primary, .9);
                 position: absolute;
@@ -401,6 +445,9 @@ section {
 .team-member {
     text-align: center;
     margin-bottom: 50px;
+    background-color: $gray-lighter;
+    border-radius: 10px;
+    padding: 0px 15px 10px 15px;
     img {
         margin: 0 auto;
         border: 7px solid white;
@@ -427,11 +474,11 @@ aside.clients {
 
 section#contact {
     background-color: $gray-darker;
-    background-image: url('../img/map-image.png');
+    background-image: url('../img/contact/contact_background.png');
     background-position: center;
     background-repeat: no-repeat;
     .section-heading {
-        color: white;
+        color: $gray-darker;
     }
     .form-group {
         margin-bottom: 25px;
@@ -496,7 +543,7 @@ footer {
 // Social Buttons
 
 ul.social-buttons {
-    margin-bottom: 0;
+    margin-bottom: 10px;
     li {
         a {
             display: block;

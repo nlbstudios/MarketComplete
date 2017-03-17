@@ -10,13 +10,17 @@ body {
 .text-muted {
   color: #777777; }
 
+.text-white {
+  color: white; }
+
 .text-primary {
   color: #60c3b3; }
 
 p {
   font-family: "Open Sans" , "Arial" , Arial, sans-serif;
-  font-size: 17px;
-  line-height: 1.75; }
+  font-size: 15px;
+  line-height: 1.75;
+  color: #777777; }
 
 .about-content {
   color: white; }
@@ -68,6 +72,12 @@ h1, h2, h3, h4, h5, h6 {
   width: 190px;
   margin: 0px auto 40px auto;
   background-color: white; }
+
+.header-underline-theme {
+  height: 3px;
+  width: 190px;
+  margin: 0px auto 40px auto;
+  background-color: #60c3b3; }
 
 .btn-primary {
   color: white;
@@ -288,6 +298,8 @@ section {
     margin-bottom: 15px; }
   section h2.section-heading.white {
     color: white; }
+  section h2.section-heading.theme {
+    color: #60c3b3; }
   section h3.section-subheading {
     font-size: 16px;
     font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -310,9 +322,32 @@ section {
   width: 90%;
   margin: 0px auto 0px auto; }
 
+#services {
+  background-image: url("../img/services/services_background.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 5% 0px 5% 0px; }
+
 .service-heading {
   margin: 15px 0;
-  text-transform: none; }
+  text-transform: none;
+  font-style: italic; }
+
+.services-icon {
+  margin: auto auto 30px auto; }
+
+.services-content {
+  margin-bottom: 30px;
+  background-color: #222222;
+  border-radius: 10px;
+  padding: 5px 10px 5px 10px; }
+
+@media (min-width: 767px) {
+  .services-heading {
+    margin: 15px 0px 30px 0px; }
+  .services-content {
+    padding: 5px 10px 0px 10px; } }
 
 #portfolio .portfolio-item {
   margin: 0 0 15px;
@@ -321,7 +356,7 @@ section {
     display: block;
     position: relative;
     max-width: 400px;
-    margin: 0 auto; }
+    margin: 0; }
     #portfolio .portfolio-item .portfolio-link .portfolio-hover {
       background: rgba(96, 195, 179, 0.1);
       position: absolute;
@@ -371,7 +406,10 @@ section {
 
 .team-member {
   text-align: center;
-  margin-bottom: 50px; }
+  margin-bottom: 50px;
+  background-color: #eeeeee;
+  border-radius: 10px;
+  padding: 0px 15px 10px 15px; }
   .team-member img {
     margin: 0 auto;
     border: 7px solid white; }
@@ -387,11 +425,11 @@ aside.clients img {
 
 section#contact {
   background-color: #222222;
-  background-image: url("../img/map-image.png");
+  background-image: url("../img/contact/contact_background.png");
   background-position: center;
   background-repeat: no-repeat; }
   section#contact .section-heading {
-    color: white; }
+    color: #222222; }
   section#contact .form-group {
     margin-bottom: 25px; }
     section#contact .form-group input,
@@ -445,7 +483,7 @@ footer {
     text-transform: none; }
 
 ul.social-buttons {
-  margin-bottom: 0; }
+  margin-bottom: 10px; }
   ul.social-buttons li a {
     display: block;
     background-color: #222222;
