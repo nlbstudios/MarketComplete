@@ -179,7 +179,7 @@ h1, h2, h3, h4, h5, h6 {
   .navbar-custom .navbar-collapse {
     border-color: rgba(255, 255, 255, 0.98); }
   .navbar-custom .navbar-toggle {
-    margin-top: 30px;
+    margin-top: 15px;
     background-color: #60c3b3;
     border-color: #60c3b3;
     font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -327,7 +327,7 @@ section {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 5% 0px 5% 0px; }
+  padding: 9% 0px 5% 0px; }
 
 .service-heading {
   margin: 15px 0;
@@ -338,10 +338,11 @@ section {
   margin: auto auto 30px auto; }
 
 .services-content {
-  margin-bottom: 30px;
+  margin: 0px auto 30px auto;
   background-color: #222222;
   border-radius: 10px;
-  padding: 5px 10px 5px 10px; }
+  padding: 5px 10px 5px 10px;
+  max-width: 350px; }
 
 @media (min-width: 767px) {
   .services-heading {
@@ -475,8 +476,13 @@ section#contact {
   section#contact .text-danger {
     color: #e74c3c; }
 
+@media (max-width: 767px) {
+  .map {
+    width: 300px; } }
+
 footer {
   padding: 25px 0;
+  background-color: #777777;
   text-align: center; }
   footer span.copyright {
     line-height: 40px;
@@ -489,6 +495,40 @@ footer {
     font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
     text-transform: uppercase;
     text-transform: none; }
+
+.footer-nav p {
+  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+  font-weight: 400;
+  letter-spacing: 1px;
+  color: white; }
+
+.footer-nav a {
+  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+  font-weight: 400;
+  letter-spacing: 1px;
+  color: white; }
+  .footer-nav a:hover, .footer-nav a:focus {
+    text-decoration: none;
+    color: #60c3b3;
+    outline: none; }
+
+.footer-nav li {
+  list-style-type: none;
+  float: left;
+  margin: 0 15px 20px 15px; }
+  .footer-nav li a {
+    font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-transform: uppercase;
+    font-weight: 400;
+    letter-spacing: 1px;
+    color: white;
+    margin-top: 50px; }
+    .footer-nav li a:hover, .footer-nav li a:focus {
+      color: #60c3b3;
+      outline: none;
+      text-decoration: none; }
 
 ul.social-buttons {
   margin-bottom: 10px; }

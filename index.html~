@@ -397,7 +397,7 @@
                                 </div>
                             </div>
                             <div class="col-md-6 text-center">
-<iframe class="map" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d34317.56806773978!2d-84.15567218748174!3d34.193642314247334!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1491404973516" width="450" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>                           
+<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d34317.56806773978!2d-84.15567218748174!3d34.193642314247334!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1491404973516" width="450" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>                           
 			</div>
 
                             <div class="clearfix"></div>
@@ -427,7 +427,7 @@
 				<li><a class="page-scroll" href="#contact">Contact</a></li>
 			</ul>
 			<br>
-			<p class="text-center"><a href="tel:6786148583">678.614.8583</a></p>
+			<p><a href="tel:6786148583">678.614.8583</a></p>
 			<p class="text-center">5480 Bethelview Road, Suite 360<br>Cumming, GA 30040</p>
        		</div> 
 	   </div>

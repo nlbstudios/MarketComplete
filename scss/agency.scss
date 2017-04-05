@@ -109,7 +109,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .btn-xl {
-    @include button-variant(white, $theme-primary, $theme-primary);
+   @include button-variant(white, $theme-primary, $theme-primary);
     @include heading-font;
     font-weight: 700;
     border-radius: 3px;
@@ -142,8 +142,8 @@ h1, h2, h3, h4, h5, h6 {
 
     }
     .navbar-collapse {
-        border-color: fade-out(white, .02);
-    }
+        border-color:   fade-out(white, .02);
+	 }
     .navbar-toggle {
         margin-top:30px;
         background-color: $theme-primary;
@@ -192,7 +192,7 @@ h1, h2, h3, h4, h5, h6 {
       .logo{
         display: inline;
       }
-        background-color: transparent;
+        background-color:transparent;
         padding: 25px 0;
         -webkit-transition: padding 0.3s;
         -moz-transition: padding 0.3s;
@@ -340,7 +340,7 @@ section {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 5% 0px 5% 0px;
+  padding: 9% 0px 5% 0px;
 }
 
 .service-heading {
@@ -354,10 +354,11 @@ section {
 }
 
 .services-content{
-  margin-bottom: 30px;
+  margin: 0px auto 30px auto;
   background-color: $gray-darker;
   border-radius:10px;
   padding: 5px 10px 5px 10px;
+  max-width:350px;
 }
 
 @media (min-width:767px){
@@ -531,10 +532,18 @@ section#contact {
     }
 }
 
+@media(max-width:767px){
+	.map{
+ 		width:300px;	
+	}
+}
+
+
 // Footer
 
 footer {
     padding: 25px 0;
+    background-color:$gray-light;
     text-align: center;
     span.copyright {
         line-height: 40px;
@@ -547,6 +556,47 @@ footer {
         @include heading-font;
         text-transform: none;
     }
+}
+
+.footer-nav{
+	p{
+		@include heading-font;
+                font-weight: 400;
+               	letter-spacing: 1px;
+               	color: white;
+	}
+	a{
+		@include heading-font;
+                font-weight: 400;
+               	letter-spacing: 1px;
+               	color: white;
+               	&:hover,
+               	&:focus {
+			text-decoration:none;
+               	    	color: $theme-primary;
+               	    	outline: none;
+		}
+	}	
+
+	li{
+		list-style-type:none;
+		float:left;
+		margin: 0 15px 20px 15px;
+		a{
+			@include heading-font;
+                	font-weight: 400;
+                	letter-spacing: 1px;
+                	color: white;
+                	margin-top:50px;
+                	&:hover,
+                	&:focus {
+                	    color: $theme-primary;
+                	    outline: none;
+			    text-decoration:none; 
+		    }
+		   }
+              
+	}
 }
 
 // Social Buttons
