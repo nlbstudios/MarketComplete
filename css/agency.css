@@ -475,12 +475,6 @@ section#contact {
   section#contact .text-danger {
     color: #e74c3c; }
 
-a[href$="google.com/maps"], .gmnoprint:not(.gm-bundled-control) {
-  display: none !important; }
-
-.gm-bundled-control .gmnoprint {
-  display: block; }
-
 footer {
   padding: 25px 0;
   text-align: center; }
