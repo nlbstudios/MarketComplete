@@ -462,6 +462,15 @@ section {
     }
 }
 
+.readbutton{
+    @include sans-serif-font;
+    font-size: 15px;
+    line-height: 1.75;
+    color: $gray-light;
+    font-style:italic;
+    border-radius:10px;
+}
+
 // Clients Aside
 
 aside.clients {

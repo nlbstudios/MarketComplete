@@ -420,6 +420,14 @@ section {
   .team-member p {
     margin-top: 0; }
 
+.readbutton {
+  font-family: "Open Sans" , "Arial" , Arial, sans-serif;
+  font-size: 15px;
+  line-height: 1.75;
+  color: #777777;
+  font-style: italic;
+  border-radius: 10px; }
+
 aside.clients img {
   margin: 50px auto; }
 
@@ -466,6 +474,12 @@ section#contact {
     color: #eeeeee; }
   section#contact .text-danger {
     color: #e74c3c; }
+
+a[href$="google.com/maps"], .gmnoprint:not(.gm-bundled-control) {
+  display: none !important; }
+
+.gm-bundled-control .gmnoprint {
+  display: block; }
 
 footer {
   padding: 25px 0;

@@ -1,12 +1,48 @@
-// $('.portfolio-item1').on({
-//   'click' : function(){
-//     $('.mainport').attr('src','img/portfolio/portfolio1.png');
-//   }
-// });
+//This is the jquery for Market Complete
 
-// 
-// if ($(window).width() <= 768){
-//   $('.logo').attr('src','img/logos/logomobile.png');
-// } else{
-//   $('.logo').attr('src','img/logos/logocolorchanged2.png');
-// };
+$("#juliehide").hide();
+$("#rachelhide").hide();
+$("#nlbhide").hide();
+$("#kimhide").hide();
+$("#lorahide").hide();
+
+$(document).ready(function(){
+	$("#juliemore").click(function(){
+		$("#juliehide").fadeToggle(500);
+	});
+});
+
+
+$(document).ready(function(){
+	$("#rachelmore").click(function(){
+		$("#rachelhide").fadeToggle(500);
+	});
+});
+
+
+$(document).ready(function(){
+	$("#nlbmore").click(function(){
+		$("#nlbhide").fadeToggle(500);
+	});
+});
+
+
+$(document).ready(function(){
+	$("#kimmore").click(function(){
+		$("#kimhide").fadeToggle(500);
+	});
+});
+
+
+$(document).ready(function(){
+	$("#loramore").click(function(){
+		$("#lorahide").fadeToggle(500);
+	});
+});
+
+
+
+
+
+
+
