@@ -179,7 +179,7 @@ h1, h2, h3, h4, h5, h6 {
   .navbar-custom .navbar-collapse {
     border-color: rgba(255, 255, 255, 0.98); }
   .navbar-custom .navbar-toggle {
-    margin-top: 15px;
+    margin-top: 30px;
     background-color: #60c3b3;
     border-color: #60c3b3;
     font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -194,7 +194,9 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: 400;
     letter-spacing: 1px;
     color: white;
-    margin-top: 50px; }
+    margin-top: 0px;
+    padding: 5px;
+    background-color: #777777; }
     .navbar-custom .nav li a:hover, .navbar-custom .nav li a:focus {
       color: #60c3b3;
       outline: none; }
@@ -226,7 +228,15 @@ h1, h2, h3, h4, h5, h6 {
       transition: all 0.3s;
       height: 135px; }
     .navbar-custom .navbar-nav > .active > a {
-      border-radius: 3px; } }
+      border-radius: 3px; }
+    .navbar-custom .nav li a {
+      font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+      text-transform: uppercase;
+      font-weight: 400;
+      letter-spacing: 1px;
+      color: white;
+      margin: 50px 10px 0 10px;
+      background-color: transparent; } }
 
 @media (min-width: 768px) {
   .navbar-custom.affix {
@@ -290,7 +300,7 @@ header {
         margin-bottom: 50px; } }
 
 section {
-  padding: 40px 0; }
+  padding: 60px 0; }
   section h2.section-heading {
     font-size: 40px;
     margin-top: 0;
@@ -310,7 +320,7 @@ section {
 
 @media (min-width: 768px) {
   section {
-    padding: 110px 0; } }
+    padding: 10% 0; } }
 
 #about {
   background-image: url("../img/about/about_background.png");
@@ -326,8 +336,7 @@ section {
   background-image: url("../img/services/services_background.png");
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
-  padding: 9% 0px 5% 0px; }
+  background-size: cover; }
 
 .service-heading {
   margin: 15px 0;
@@ -477,7 +486,10 @@ section#contact {
     color: #e74c3c; }
 
 @media (max-width: 767px) {
+  section#contact {
+    background-color: #555555; }
   .map {
+    height: 250px;
     width: 300px; } }
 
 footer {

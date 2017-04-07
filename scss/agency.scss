@@ -163,7 +163,9 @@ h1, h2, h3, h4, h5, h6 {
                 font-weight: 400;
                 letter-spacing: 1px;
                 color: white;
-                margin-top:50px;
+                margin-top:0px;
+		padding:5px;
+		background-color:$gray-light;
                 &:hover,
                 &:focus {
                     color: $theme-primary;
@@ -209,8 +211,21 @@ h1, h2, h3, h4, h5, h6 {
         .navbar-nav>.active>a {
             border-radius: 3px;
         }
+	.nav {
+       		 li {
+	            a {
+       		         @include heading-font;
+               		 font-weight: 400;
+	                letter-spacing: 1px;
+       		         color: white;
+               		 margin:50px 10px 0 10px;
+			background-color:transparent;
+                }
+            }
+        }
     }
-}
+
+    }
 
 // Navbar Change on Scroll
 
@@ -284,7 +299,7 @@ header {
 // Global Section Styles
 
 section {
-    padding: 40px 0;
+    padding: 60px 0;
     h2.section-heading {
         font-size: 40px;
         margin-top: 0;
@@ -309,7 +324,7 @@ section {
 
 @media(min-width:768px) {
     section {
-        padding: 110px 0;
+        padding: 10% 0;
     }
 }
 
@@ -340,7 +355,6 @@ section {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 9% 0px 5% 0px;
 }
 
 .service-heading {
@@ -533,7 +547,11 @@ section#contact {
 }
 
 @media(max-width:767px){
+	section#contact{
+		background-color:$gray;
+	}
 	.map{
+		height:250px;
  		width:300px;	
 	}
 }
