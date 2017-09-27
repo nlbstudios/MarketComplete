@@ -455,6 +455,18 @@ section {
         }
     }
 }
+
+.crop{
+    width:360px;
+    height:260px;
+    overflow:hidden;
+}
+
+.crop img{
+    width: 200;
+}
+
+
 // Team Section
 
 .team-member {

@@ -3,8 +3,9 @@
 $("#juliehide").hide();
 $("#rachelhide").hide();
 $("#nlbhide").hide();
-$("#kimhide").hide();
-$("#lorahide").hide();
+$("#adamhide").hide();
+$("#samanthahide").hide();
+$("#matthide").hide();
 
 $(document).ready(function(){
 	$("#juliemore").click(function(){
@@ -26,17 +27,22 @@ $(document).ready(function(){
 	});
 });
 
+$(document).ready(function(){
+	  $("#mattmore").click(function(){
+		    $("#matthide").fadeToggle(500);
+	  });
+});
 
 $(document).ready(function(){
-	$("#kimmore").click(function(){
-		$("#kimhide").fadeToggle(500);
+	$("#adammore").click(function(){
+		$("#adamhide").fadeToggle(500);
 	});
 });
 
 
 $(document).ready(function(){
-	$("#loramore").click(function(){
-		$("#lorahide").fadeToggle(500);
+	$("#samanthamore").click(function(){
+		$("#samanthahide").fadeToggle(500);
 	});
 });
 
