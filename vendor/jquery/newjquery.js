@@ -6,6 +6,7 @@ $("#nlbhide").hide();
 $("#adamhide").hide();
 $("#samanthahide").hide();
 $("#matthide").hide();
+$("#kimhide").hide();
 
 $(document).ready(function(){
 	$("#juliemore").click(function(){
@@ -44,6 +45,12 @@ $(document).ready(function(){
 	$("#samanthamore").click(function(){
 		$("#samanthahide").fadeToggle(500);
 	});
+});
+
+$(document).ready(function(){
+	  $("#kimmore").click(function(){
+		    $("#kimhide").fadeToggle(500);
+	  });
 });
 
 
