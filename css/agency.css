@@ -274,7 +274,8 @@ header {
       font-weight: 700;
       font-size: 50px;
       line-height: 50px;
-      margin-bottom: 25px; }
+      margin-bottom: 25px;
+      text-shadow: 1px 1px 1px #fff; }
 
 @media (min-width: 768px) {
   header {
@@ -297,7 +298,8 @@ header {
         font-weight: 700;
         font-size: 58px;
         line-height: 75px;
-        margin-bottom: 50px; } }
+        margin-bottom: 50px;
+        text-shadow: 1px 1px 1px #fff; } }
 
 section {
   padding: 60px 0; }
